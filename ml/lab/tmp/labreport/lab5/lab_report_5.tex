@@ -1,0 +1,68 @@
+%
+\documentclass[10pt,a4paper]{article}
+
+
+\usepackage{array}
+\usepackage{subfigure}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{cite}
+\usepackage{color}
+\usepackage{url}
+\usepackage[lined,linesnumbered,ruled,norelsize]{algorithm2e}
+\usepackage{listings}
+\lstset{
+  language=Octave, 
+  basicstyle=\footnotesize, 
+  frame=single, 
+  showspaces=false, 
+  showstringspaces=false}
+\date{}
+
+
+
+
+\begin{document}
+
+\title{Technical Report 5: Naive Bayes}
+
+\maketitle
+
+\section{Classification Error}
+%
+  After training on the full training set (700 documents), there are 5 misclassifications. This amounts to 1.9\% of the test set.
+
+
+\section{Smaller Training Set}
+%
+  The results of applying smaller training sets are as follows
+
+
+  %
+    \begin{table}[htb]
+    %\caption{}
+    \begin{center}
+     \begin{tabular}{|c|c|c|c|} \hline
+       \# of training documents & \# of misclassifications & Percentage \\ \hline
+       50                       & 7                        & 2.7\% \\ \hline
+       100                      & 6                        & 2.3\% \\ \hline
+       400                      & 6                        & 2.3\% \\ \hline
+     \end{tabular}
+    \end{center}
+    \label{tab:norm}
+    \end{table}
+
+\end{document}
+
+
+
+
+
+
+
+
+  \end{lstlisting}
+  %
+
+
